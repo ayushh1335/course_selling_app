@@ -1,8 +1,6 @@
 const mongoose=require('mongoose');
-console.log("chl ra hai re ")
 const Schema=mongoose.Schema;
 const ObjectId=mongoose.Types.ObjectId;
-mongoose.connect('mongodb+srv://ayush:ayush%401335@cluster0.xcpea.mongodb.net/');
 const userSchema= new Schema({
                email:{type:String,unique:true},
                password:{type:String,},
